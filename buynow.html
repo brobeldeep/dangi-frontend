@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Windows Key</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0078D4',
+                        secondary: '#50E3C2',
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-primary text-white p-5 text-center">
+        <h1 class="text-3xl font-bold">Buy Genuine Windows Keys</h1>
+        <p class="mt-2 text-lg">Secure and Instant Delivery of Windows Product Keys</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto py-10 px-4">
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Product Details -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-4 text-primary">Windows 11 Pro Key</h2>
+                <p class="text-gray-600 mb-4">Upgrade to Windows 11 Pro and experience the latest features and security
+                    enhancements. Perfect for professionals, gamers, and advanced users.</p>
+                <ul class="list-disc list-inside mb-4">
+                    <li>Instant Delivery via Email</li>
+                    <li>100% Genuine and Official Keys</li>
+                    <li>Easy Activation Guide Included</li>
+                    <li>24/7 Customer Support</li>
+                </ul>
+                <div class="flex items-center">
+                    <span class="text-3xl font-bold text-secondary">3039 ₹</span>
+                </div>
+            </div>
+
+            <!-- Checkout Section -->
+            <div class="bg-white p-6 rounded-lg shadow-md flex flex-col justify-between">
+                <h3 class="text-xl font-semibold mb-4 text-primary">Secure Checkout</h3>
+                <form id="checkout-form" class="space-y-4">
+                    <input type="text" id="name" placeholder="Full Name" class="w-full p-3 border border-gray-300 rounded-md" required>
+                    <input type="email" id="email" placeholder="Email Address" class="w-full p-3 border border-gray-300 rounded-md" required>
+                    <input type="number" id="card-number" placeholder="Card Number" class="w-full p-3 border border-gray-300 rounded-md" required>
+                    <input type="text" id="expiry" placeholder="Expiry Date (MM/YY)" class="w-full p-3 border border-gray-300 rounded-md" required>
+                    <input type="number" id="cvv" placeholder="CVV" class="w-full p-3 border border-gray-300 rounded-md" required>
+                    <button type="submit" class="w-full py-3 bg-primary text-white rounded-md hover:bg-secondary transition duration-300">Buy Now</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 text-center">
+        <p>&copy; 2024 WINDeeKeYS. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById('checkout-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+
+            // Validate form fields
+            if (name && email) {
+                alert(`Thank you, ${name}! Your Windows key will be sent to ${email}.`);
+                // Add additional payment processing code here.
+            } else {
+                alert('Please fill out all required fields.');
+            }
+        });
+    </script>
+</body>
+
+</html>
